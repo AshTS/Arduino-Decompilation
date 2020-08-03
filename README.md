@@ -6,8 +6,8 @@ The results of a project to decompile the assembly gathered from `avr-objdump`.
 
 1. Compile the text.ino project with the Arduino IDE
 2. Use `avr-objdump` to disassemble the `code.hex`* file (`avr-objdump code.hex -D -m avr5 > asm.txt`)
-3. Go through the assembly code and find usable patterns
-4. Convert the generated notes to C code
+3. Go through the assembly code and find usable patterns (Pictures of the documents can be found in the Pictures directory)
+4. Convert the generated notes to C code (`code.c`)
 5. Clean up C code and transfer notes
 
 \* `code.hex` is the version of the binary output which includes the bootloader, however that output has been removed from the `asm.txt` file because the main source contained enough interesting parts.
